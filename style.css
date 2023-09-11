@@ -222,16 +222,6 @@ nav ul li a:hover::after{
     align-items: center;
 }
 
-.social-icons{
-    position: absolute;
-    right: 5%;
-    bottom: 8%;
-}
-.social-icons img{
-    width: 25px;
-    display: block;
-    margin: 25px 5px;
-}
 /*--------omne-------------*/
 .container2{
     width: 100%;
