@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #908e8e;
+    color: #fff;
+    height: 215vh;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.header-menu{
+    background: transparent;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.header-menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.header-menu ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.header-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    height: 210vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),transparent),url(images_pozvankanaOD/web\ stranka\ farebna.jpg);
+    background-size:cover;
+    background-position: center;
+    padding: 0 0 0 20;
+    position: relative;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.search-bar{
+    width: 90%;
+    height: 5%;
+    max-width: 250px;
+    background: rgba(247, 242, 242, 0.2);
+    display: inline-flex;
+    align-items: center;
+    border-radius: 30px;
+    padding:10px 20px;
+    position: fixed;
+    top: 0;
+    margin: 18px;
+    backdrop-filter: blur(20px) saturate(80%);
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 30px 10px;
+    font-size: 14px;
+    color: #fff;
+    font-family: sans-serif;
+    width: 35px;
+}
+::placeholder{
+    color: #fff;
+}
+.search-bar button img{
+    width: 14px;
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: #29353e;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    position: fixed;
+}
+
+.logo{
+    width: 140px;
+    cursor: pointer;
+    position: fixed;
+    float: left;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 16px 36px;
+}
+.cart-icon{
+    width: 30px;
+    cursor: pointer;
+}
+nav ul{
+    list-style: none;
+    background: rgba(0,0,0,0,);
+    overflow: hidden;
+    color: white;
+    flex: 2;
+    text-align: center;
+    padding: 0;
+    transition: 1s;
+}
+.nav.black ul{
+    background: #000;
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -6px;
+    transform: translateX(-50%);
+    background: #fff;
+    left: 50%;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 22%;
+    font-size: 30px;
+    color: #fff;
+    position:absolute;
+    top: 7%;
+    bottom: 10%;
+    font-family: sans-serif;
+}
+.header-text p{
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: 5px;
+    text-shadow: 0 0 09px #000;
+    text-align: justify;
+    font-family: sans-serif;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+    
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.copyright{
+    max-width: 100%;
+    text-align: center;
+    padding: 0px 0;
+    background: #908e8e;
+    font-weight: 300;
+    margin-top: 10px;
+    bottom: 10px;
+    color: #fff;
+}
