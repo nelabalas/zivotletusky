@@ -429,6 +429,16 @@ transition: background 0.5s, transform 0.5s;
     background: #29353e;
 }
 /*--------contact-------------*/
+.container4{
+    width: 100%;
+    height: 95vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(images/web\ stranka\ farebna.jpg);
+    background-size:cover;
+    background-position: top;
+    padding: 30px;
+    position: relative;
+    background-attachment: fixed;
+}
 .contact-left{
     flex-basis: 35%;
 }
