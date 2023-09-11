@@ -10,7 +10,7 @@ html{
 body{
     background: #908e8e;
     color: #fff;
-    height: 500vh;
+    height: 485vh;
 }
 #header{
     width: 100%;
@@ -302,7 +302,7 @@ nav ul li a:hover::after{
 
 .container3{
     width: 100%;
-    height: 125vh;
+    height: 110vh;
     background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(images/web\ stranka\ farebna.jpg);
     background-size:cover;
     background-position: top;
