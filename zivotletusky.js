@@ -25,6 +25,12 @@ window.addEventListener("scroll", function () {
 
   scrollPosition = currentPosition;
 });
+var background = document.querySelector('.container');
+window.addEventListener('scroll', function() {
+    var yOffset = window.pageYOffset;
+    background.style.backgroundPosition = 'center ' + (-yOffset) + 'px';
+});
+
 
 
 
