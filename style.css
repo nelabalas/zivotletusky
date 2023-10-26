@@ -501,16 +501,6 @@ form .btn2{
     .content-container {
         overflow-x: hidden;
     }
-   .container::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: url(images/pozadie\ uvod\ farebne.jpg) center/cover fixed no-repeat;
-}
     .nav-link {
         padding: 5px; /* Adjust spacing for navigation links */
     }
