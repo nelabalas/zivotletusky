@@ -493,7 +493,6 @@ form .btn2{
         background-size:cover;
         background-position: center;
         position: relative;
-        background-attachment: fixed;
         display: flex;
         align-items: center;
         justify-content: right; /* Reduce padding for smaller screens */
