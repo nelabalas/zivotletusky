@@ -496,11 +496,9 @@ form .btn2{
         display: flex;
         background-attachment: fixed;
         align-items: center;
+        z-index: -1;
         justify-content: right; /* Reduce padding for smaller screens */
     }
-.avia-safari #top .avia-full-stretch{
-background-attachment: scroll !important;
-}
 
     .content-container {
         overflow-x: hidden;
