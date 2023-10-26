@@ -682,7 +682,7 @@ form .btn2{
         height: auto;
         background-size:cover;
         background-position: center;
-        position: relative;
+        position: fixed;
         background-attachment: fixed;
         display: block;
         align-items: center;
