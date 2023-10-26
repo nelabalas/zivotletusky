@@ -498,6 +498,18 @@ form .btn2{
         align-items: center;
         justify-content: right; /* Reduce padding for smaller screens */
     }
+    
+    .background_wrap {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    background-image: url(images/pozadie\ uvod\ farebne\ mobil.jpg);
+    background-attachment: fixed;
+}
 
     .content-container {
         overflow-x: hidden;
