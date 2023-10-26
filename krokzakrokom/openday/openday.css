@@ -1,203 +1,240 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background: #908e8e;
     color: #fff;
-    height: 670vh;
 }
-#header{
+
+/* Header Styles */
+
+#header {
     width: 100%;
-    height: 100vh;
     background-size: cover;
     background-position: center;
+    height: auto; /* Adjust height for mobile */
+    min-height: 100vh;
 }
-.header-menu{
+
+.header-menu {
     background: transparent;
     text-align: center;
     position: fixed;
     top: 0;
     width: 100%;
 }
-.header-menu ul{
-    display: inline-flex;
+
+.header-menu ul {
+    display: flex;
     list-style: none;
     color: #fff;
-}
-.header-menu ul li{
-    width: 120px;
-    margin: 15px;
-    padding: 15px;
-}
-.header-menu ul li a{
-    text-decoration: none;
-    color: #fff;
+    justify-content: center; /* Center the menu items on mobile */
 }
 
-.container{
+.header-menu ul li {
+    margin: 15px;
+}
+
+.header-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Container Styles */
+
+.container {
     width: 100%;
-    height: 665vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),transparent),url(images_openday/web\ stranka\ farebna.jpg);
-    background-size:cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url(images_openday/web\ stranka\ farebna.jpg);
+    background-size: cover;
     background-position: center;
-    padding: 0 0 0 20;
+    padding: 0 10px; /* Increase left and right padding for mobile */
     position: relative;
     background-attachment: fixed;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center; /* Center content on mobile */
+    min-height: 100vh;
+    height: auto; /* Adjust height for mobile */
 }
-.search-bar{
+
+/* Search Bar Styles */
+
+.search-bar {
     width: 90%;
-    height: 5%;
     max-width: 250px;
     background: rgba(247, 242, 242, 0.2);
-    display: inline-flex;
+    display: flex;
     align-items: center;
     border-radius: 30px;
-    padding:10px 20px;
+    padding: 10px; /* Increase padding for mobile */
     position: fixed;
     top: 0;
-    margin: 18px;
+    left: 5%; /* Adjust left position for mobile */
     backdrop-filter: blur(20px) saturate(80%);
 }
-.search-bar input{
+
+.search-bar input {
     background: transparent;
     flex: 1;
     border: 0;
     outline: none;
-    padding: 30px 10px;
+    padding: 10px; /* Reduce padding for mobile */
     font-size: 14px;
     color: #fff;
     font-family: sans-serif;
-    width: 35px;
 }
-::placeholder{
-    color: #fff;
-}
-.search-bar button img{
-    width: 14px;
-}
-.search-bar button{
-    border: 0;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    background: #29353e;
-    cursor: pointer;
-}
-nav{
+
+/* Logo and Navigation Styles */
+
+nav {
     display: flex;
-    width:100%;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 5px 0;
+    padding: 10px 5px; /* Increase padding for mobile */
     position: fixed;
 }
 
-.logo{
-    width: 140px;
-    cursor: pointer;
-    position: fixed;
-    float: left;
-    font-weight: bold;
-    font-size: 24px;
-    margin: 16px 36px;
+.logo {
+    width: 120px; /* Adjust logo size for mobile */
+    margin: 10px;
 }
-.cart-icon{
-    width: 30px;
-    cursor: pointer;
-}
-nav ul{
-    list-style: none;
-    background: rgba(0,0,0,0,);
+
+nav ul {
+    background: rgba(0, 0, 0, 0);
     overflow: hidden;
     color: white;
-    flex: 2;
+    flex: 1; /* Adjust flex property for mobile */
     text-align: center;
-    padding: 0;
-    transition: 1s;
 }
-.nav.black ul{
+
+.nav.black ul {
     background: #000;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
-    padding: 20px;
-    list-style: none;
-    margin: 10px 20px;
+    padding: 10px;
+    margin: 5px;
 }
-nav ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    position: relative;
+
+nav ul li a {
+    font-size: 12px; /* Adjust font size for mobile */
+    letter-spacing: 2px; /* Reduce letter-spacing for mobile */
 }
-nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    position: absolute;
-    bottom: -6px;
-    transform: translateX(-50%);
-    background: #fff;
-    left: 50%;
-    transition: 0.5s;
+
+/* Header Text Styles */
+
+.header-text {
+    text-align: center; /* Center text on mobile */
+    margin: 20px; /* Adjust margin for mobile */
 }
-nav ul li a:hover::after{
-    width: 100%;
+
+.header-text p {
+    font-size: 16px; /* Adjust font size for mobile */
+    line-height: 24px; /* Adjust line-height for mobile */
+    margin-left: 0;
+    text-shadow: none; /* Remove text shadow for mobile */
+    text-align: center; /* Center text on mobile */
 }
-.header-text{
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 7%;
-    font-size: 30px;
-    color: #fff;
-    position:absolute;
-    top: 7%;
-    bottom: 10%;
-    font-family: sans-serif;
-}
-.header-text p{
-    color: #ffffff;
-    font-size: 18px;
-    line-height: 28px;
-    margin-left: 5px;
-    text-shadow: 0 0 09px #000;
-    text-align: justify;
-    font-family: sans-serif;
-}
-@keyframes back{
-    100%{
-        background-position: 2000px 0;
-    }
-    
-}
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-.copyright{
-    max-width: 100%;
+
+/* Copyright Styles */
+
+.copyright {
     text-align: center;
-    padding: 0px 0;
     background: #908e8e;
     font-weight: 300;
     margin-top: 10px;
-    bottom: 10px;
+    padding: 5px 0; /* Adjust padding for mobile */
     color: #fff;
 }
-img{
-    margin: 5px 10px 5px 10px;
+
+/* Image Styles */
+
+img {
+    margin: 5px 10px;
+    max-width: 100%; /* Ensure images are responsive on mobile */
+}
+
+/* Mobile CSS - Adjustments for small screens */
+@media screen and (max-width: 768px) {
+    /* Initially hide the mobile menu */
+.header-menu {
+    display: none;
+}
+.mobile-menu {
+    display: none;
+    background-color: #333;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+}
+
+.mobile-menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+.mobile-menu li {
+    padding: 10px;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+.menu-items {
+    max-width: 768px; 
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .menu-items ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-items li {
+    padding: 10px;
+  }
+
+/* Styles for the hamburger icon (displayed only on smaller screens) */
+.hamburger-icon {
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.4);
+    border-bottom: 35%;
+    padding: 10px;
+}
+
+    .cart-icon {
+        display: none; /* Hide the cart icon on smaller screens if necessary */
+    }
+    .header-text {
+        margin: 5px; /* Adjust margin for small screens */
+    }
+
+    .search-bar {
+        width: 80%; /* Adjust width for small screens */
+        left: 10%; /* Adjust left position for small screens */
+    }
 }
