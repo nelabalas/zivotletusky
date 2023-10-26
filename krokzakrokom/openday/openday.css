@@ -168,6 +168,20 @@ img {
 
 /* Mobile CSS - Adjustments for small screens */
 @media screen and (max-width: 768px) {
+.search-bar {
+        width: 200px;
+        height: 5%;
+        max-width: 250px;
+        background: rgba(247, 242, 242, 0.2);
+        display: inline-flex;
+        align-items: center;
+        border-radius: 30px;
+        padding: 2px;
+        position: fixed;
+        top: -5px; /* Adjust the top position to your preference */
+        left: 2px; /* Set the left position to 18px or any value you prefer */
+        backdrop-filter: blur(20px) saturate(80%);
+    } 
     /* Initially hide the mobile menu */
 .header-menu {
     display: none;
@@ -233,8 +247,4 @@ img {
         margin: 5px; /* Adjust margin for small screens */
     }
 
-    .search-bar {
-        width: 80%; /* Adjust width for small screens */
-        left: 10%; /* Adjust left position for small screens */
-    }
 }
